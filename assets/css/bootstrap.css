@@ -180,8 +180,9 @@ optgroup {
   font-weight: bold;
 }
 table {
-  border-spacing: 0;
-  border-collapse: collapse;
+  /* border-spacing: 0; */
+  /* border-collapse: collapse; */
+  border-width: medium;
 }
 td,
 th {
@@ -2058,13 +2059,14 @@ pre code {
   }
 }
 table {
-  background-color: transparent;
+  background-color: white;
+  margin: 0 auto !important;
 }
 th {
   text-align: left;
 }
 .table {
-  width: 100%;
+  width: 70%;
   max-width: 100%;
   margin-bottom: 20px;
 }
@@ -2077,7 +2079,7 @@ th {
   padding: 8px;
   line-height: 1.42857143;
   vertical-align: top;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #000;
 }
 .table > thead > tr > th {
   vertical-align: bottom;
@@ -2106,8 +2108,10 @@ th {
   padding: 5px;
 }
 .table-bordered {
-  border: 1px solid #ddd;
+  border: 6px solid #FFF;
 }
+
+table.table.table-bordered.table-hover {}
 .table-bordered > thead > tr > th,
 .table-bordered > tbody > tr > th,
 .table-bordered > tfoot > tr > th,
@@ -2126,7 +2130,7 @@ th {
 }
 .table-hover > tbody > tr:hover > td,
 .table-hover > tbody > tr:hover > th {
-  background-color: #f5f5f5;
+  /* background-color: #f5f5f5; */
 }
 table col[class*="col-"] {
   position: static;
